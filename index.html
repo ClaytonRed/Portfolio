@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="main-styles.css" />
+
+        <title>Clayton Rist's Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div></div>
+
+                <div class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="navbar-links">
+                    <ul>
+                        <li>
+                            <a href="#home-section" class="menuItem">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about-section" class="menuItem">About</a>
+                        </li>
+                        <li>
+                            <a href="#project-section" class="menuItem"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact-section" class="menuItem"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- HOME PAGE -->
+        <section id="home-section" class="home-section">
+            <canvas id="c"></canvas>
+            <div class="home-text">
+                <h1>Clayton Rist</h1>
+                <h2>Junior Full-Stack Developer</h2>
+                <a href="https://github.com/ClaytonRed" target="_blank">
+                    <img src="./icons/icons8-github-64.svg" alt="GitHub icon" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/clayton-rist-027185171/"
+                    target="_blank"
+                >
+                    <img
+                        class="linkedin"
+                        src="./icons/icons8-linkedin-60.svg"
+                        alt="LinkedIn icon"
+                    />
+                </a>
+
+                <a href="mailto:claytonrist.dev@gmail.com" target="_blank">
+                    <img
+                        class="gmail"
+                        src="./icons/icons8-gmail-logo.svg"
+                        alt="Gmail icon"
+                    />
+                </a>
+            </div>
+
+            <a href="#about-section" class="arrow-down">
+                <img src="./icons/arrow-down-circle.svg" alt="Down arrow" />
+            </a>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="about-section" class="about-section">
+            <h1>About Me</h1>
+            <p>Junior full-stack developer from Sheffield, UK.</p>
+
+            <p>
+                After an 8 year career in teaching and childcare, I began
+                studying at the Open University, achieving a distinction for my
+                Certificate of Higher Education in Computing, IT and Design.
+            </p>
+
+            <p>
+                Following the completion of my qualification, I spent 3 months
+                travelling around Europe with my partner, returning to Sheffield
+                in late 2022 to start studying with The Developer Academy in
+                early 2023. While working with TDA, I learned the fundamentals
+                of full-stack web development and became familiar with HTML,
+                CSS, Bootstrap, Javascript, Node.js and React.
+            </p>
+
+            <p>
+                Beyond programming, I have a deep love for video games, which
+                fuels my curiosity and enthusiasm for interactive digital
+                experiences.
+            </p>
+
+            <p>
+                Additionally, I'm a passionate musician and enjoy playing guitar
+                and piano, and creating my own video game music.
+            </p>
+
+            <!-- <div class="ptags">
+						<p class="p1">HTML</p>
+						<p class="p2">CSS</p>
+						<p class="p3">Bootstrap</p>
+						<p class="p4">JavaScript</p>
+						<p class="p5">React</p>
+						<p class="p6">Node.js</p>
+					</div> -->
+
+            <div class="skill-icons">
+                <img src="./skill-icons/icons8-html.svg" alt="HTML icon" />
+                <img src="./skill-icons/icons8-css.svg" alt="CSS icon" />
+                <img
+                    src="./skill-icons/icons8-bootstrap.svg"
+                    alt="Bootstrap icon"
+                />
+                <img
+                    src="./skill-icons/icons8-javascript.svg"
+                    alt="JavaScript icon"
+                />
+                <img src="./skill-icons/icons8-react.svg" alt="React icon" />
+                <img
+                    src="./skill-icons/icons8-node-js.svg"
+                    alt="Node.js icon"
+                />
+            </div>
+
+            <a href="#project-section" class="about-arrow-down">
+                <img src="./icons/arrow-down-circle.svg" alt="Down arrow" />
+            </a>
+        </section>
+
+        <!-- PROJECTS PAGE -->
+        <section id="project-section" class="project-section">
+            <div class="project-page-text">
+                <h1>Projects</h1>
+                <p>
+                    Here are a few projects that I built personally and while
+                    studying with The Developer Academy.
+                </p>
+            </div>
+
+            <div class="carousel" data-carousel>
+                <button
+                    class="carousel-button prev"
+                    data-carousel-button="prev"
+                >
+                    <span>&#8249;</span>
+                </button>
+                <button
+                    class="carousel-button next"
+                    data-carousel-button="next"
+                >
+                    <span>&#8250;</span>
+                </button>
+
+                <ul data-slides>
+                    <!-- Slide -- CamperVan Japan -->
+                    <li class="slide" data-active>
+                        <img
+                            src="./images/Campervan-Japan-resize.jpg"
+                            alt="Screenshot of CampervanJapan"
+                        />
+                        <div class="project-info">
+                            <h1 class="project-title">Campervan Japan</h1>
+                            <p class="project-text">
+                                a small text-adventure game built in Javascript
+                                using Object Oriented Programming
+                            </p>
+
+                            <!-- Link Icons -->
+                            <div class="link-icons">
+                                <!-- GitHub Repo Link -->
+                                <a
+                                    href="https://github.com/ClaytonRed/Campervan-Japan"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./icons/icons8-github-64.svg"
+                                        alt="GitHub icon"
+                                    />
+                                </a>
+
+                                <!-- GitHub Pages Link -->
+                                <a
+                                    href="https://claytonred.github.io/Campervan-Japan/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./icons/earth-svgrepo-com.svg"
+                                        alt="Website Icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Slide -- Geography Quiz -->
+                    <li class="slide">
+                        <img
+                            src="./images/JS-Quiz-resize.jpg"
+                            alt="Screenshot of Geography Quiz"
+                        />
+                        <div class="project-info">
+                            <h1 class="project-title">Geography Quiz</h1>
+                            <p class="project-text">
+                                a geography quiz built as a single page
+                                application in Javascript
+                            </p>
+
+                            <!-- Link Icons -->
+                            <div class="link-icons">
+                                <!-- GitHub Repo Link -->
+                                <a
+                                    href="https://github.com/ClaytonRed/crist_javascript_quiz"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./icons/icons8-github-64.svg"
+                                        alt="GitHub icon"
+                                    />
+                                </a>
+
+                                <!-- GitHub Pages Link -->
+                                <a
+                                    href="https://claytonred.github.io/crist_javascript_quiz/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./icons/earth-svgrepo-com.svg"
+                                        alt="Website Icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Slide -- Pokedex App -->
+                    <li class="slide">
+                        <img
+                            src="./images/Pokedex-App-resize.jpg"
+                            alt="Screenshot of Pokedex App"
+                        />
+                        <div class="project-info">
+                            <h1 class="project-title">Pokédex React App</h1>
+                            <p class="project-text">
+                                a simple Pokédex built using React and API calls
+                            </p>
+
+                            <!-- Link Icons -->
+                            <div class="link-icons">
+                                <!-- GitHub Repo Link -->
+                                <a href="" target="_blank">
+                                    <img
+                                        src="/icons/icons8-github-64.svg"
+                                        alt="GitHub icon"
+                                    />
+                                </a>
+
+                                <!-- GitHub Pages Link -->
+                                <a href="" target="_blank">
+                                    <img
+                                        src="/icons/earth-svgrepo-com.svg"
+                                        alt="Website Icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Slide -- Watchlist App -->
+                    <li class="slide">
+                        <img
+                            src="/images/Watchlist-App-resize.jpg"
+                            target="_blank"
+                            alt="Image 4"
+                        />
+                        <div class="project-info">
+                            <h1 class="project-title">Watchlist App</h1>
+                            <p class="project-text">
+                                a movie and TV Watchlistapp built using React
+                                and connected to a Mongo database
+                            </p>
+
+                            <!-- Link Icons -->
+                            <div class="link-icons">
+                                <!-- GitHub Repo Link -->
+                                <a href="" target="_blank">
+                                    <img
+                                        src="/icons/icons8-github-64.svg"
+                                        alt="GitHub icon"
+                                    />
+                                </a>
+
+                                <!-- GitHub Pages Link -->
+                                <a href="" target="_blank">
+                                    <img
+                                        src="/icons/earth-svgrepo-com.svg"
+                                        alt="Website Icon"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <footer id="contact-section" class="contact-section">
+            <div class="contact-page-text">
+                <h1>Contact</h1>
+                <p>claytonrist.dev@gmail.com</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://github.com/ClaytonRed" target="_blank">
+                    <img src="./icons/icons8-github-64.svg" alt="GitHub icon" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/clayton-rist-027185171/"
+                    target="_blank"
+                >
+                    <img
+                        class="linkedin"
+                        src="./icons/icons8-linkedin-60.svg"
+                        alt="LinkedIn icon"
+                    />
+                </a>
+
+                <a href="mailto:claytonrist.dev@gmail.com" target="_blank">
+                    <img
+                        class="gmail"
+                        src="./icons/icons8-gmail-logo.svg"
+                        alt="Gmail icon"
+                    />
+                </a>
+            </div>
+        </footer>
+
+        <script src="./carousel/carousel.js"></script>
+        <script src="./nav/nav.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+        <script src="./three/space-background.js"></script>
+    </body>
+</html>

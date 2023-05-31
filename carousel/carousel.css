@@ -1,0 +1,155 @@
+/* STYLING FOR CAROUSEL BOX */
+
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+/* STYLING FOR CAROUSEL SLIDES */
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+   
+    object-fit: cover;
+    object-position: center;
+    
+    width: 100%;
+    height: 100%;
+
+    filter: brightness(0.5);
+    transition: filter 0.2s ease;
+}
+
+.slide:hover > img {
+    transition: opacity 0.2 ease;
+    filter: brightness(0.50);
+}
+
+.slide[data-active] {
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.slide .project-info { 
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    color: white;
+}
+
+.slide:hover .project-info { 
+    opacity: 1;
+}
+
+
+/* STYLING FOR SLIDE TEXT */
+
+.project-title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "GothamBold";
+}
+
+.project-text {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: "GothamLight";
+    margin: 0px 50px 0px 50px;
+}
+
+.link-icons {
+    margin-top: 1rem;
+}
+
+.link-icons a:link {
+   text-decoration: none; 
+}
+
+
+/* STYLING FOR CAROUSEL BUTTONS */
+
+.carousel-button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    
+    z-index: 2;
+    height: 75px;
+
+    font-size: 4rem;
+    color: rgba(255, 255, 255, .5);
+
+    top: 50%;
+    transform: translateY(-50%);
+        
+    cursor: pointer;
+    background: none;
+    background-color: rgba(0, 0, 0, .1);
+
+    border: none;
+    border-radius: .25rem;
+}
+
+.carousel-button > span {
+    height: 100%;
+    line-height: 1;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+@media screen and (min-width: 960px) {
+
+    .slide .project-info { 
+        opacity: 0;
+    }
+
+    .slide > img {
+        filter: brightness(1);
+    }
+}
