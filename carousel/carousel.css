@@ -77,7 +77,7 @@
 
 .project-title {
     color: white;
-    font-size: 50px;
+    font-size: 2rem;
     text-align: center;
     text-decoration: none;
     font-family: "GothamBold";
@@ -85,7 +85,7 @@
 
 .project-text {
     color: white;
-    font-size: 30px;
+    font-size: 1.4rem;
     text-align: center;
     font-family: "GothamLight";
     margin: 0px 50px 0px 50px;
@@ -151,5 +151,13 @@
 
     .slide > img {
         filter: brightness(1);
+    }
+
+    .project-title {
+        font-size: 4rem;
+    }
+
+    .project-text {
+        font-size: 1.5rem;
     }
 }
