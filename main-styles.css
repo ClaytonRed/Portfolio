@@ -48,13 +48,14 @@ section canvas {
 section h1 {
     margin-bottom: 1rem;
     text-align: left;
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    /* font-size: clamp(2.5rem, 5vw, 4.5rem); */
+    font-size: 3rem;
 }
 
 section h2 {
     font-family: "GothamLight";
-    font-size: 3rem;
-    font-size: clamp(1.75rem, 2.5vw, 3rem);
+    /* font-size: clamp(1.75rem, 2.5vw, 3rem); */
+    font-size: 2rem;
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -120,46 +121,17 @@ section h2 {
 }
 
 .about-section h1 {
-    font-size: clamp(1.5rem, 2.5vw, 3.5rem);
+    font-size: 2rem;
 }
 
 .about-section p {
     font-size: 1rem;
+    height: auto;
 }
 
 .about-page-text p {
     width: 60ch;
 }
-
-/* .ptags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.p1 {
-    color: orangered;
-}
-
-.p2 {
-    color: lightskyblue;
-}
-
-.p3 {
-    color: violet;
-}
-
-.p4 {
-    color: yellow;
-}
-
-.p5 {
-    color: lightseagreen
-}
-
-.p6 {
-    color: limegreen;
-} */
 
 .about-arrow-down {
     visibility: hidden;
@@ -177,7 +149,6 @@ section h2 {
 .project-section {
     display: grid;
     place-content: center;
-    /* align-content: center; */
     justify-content: stretch;
     grid-template-rows: auto 1fr;
     min-height: 80vh;
@@ -191,11 +162,11 @@ section h2 {
     align-items: center;
 }
 
-.project-section h1 {
-    font-size: clamp(1.5rem, 2.5vw, 3.5rem);
+.project-section > h1 {
+    font-size: 2rem;
 }
 
-.project-section p {
+.project-section > p {
     font-size: 1rem;
     margin-top: 0;
     text-align: center;
@@ -223,14 +194,14 @@ section h2 {
 .contact-page-text h1 {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     margin-top: 0;
 }
 
 .contact-page-text p {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -246,8 +217,20 @@ section h2 {
         padding-left: 4rem;
     }
 
+    .home-text h1 {
+        font-size: 4rem;
+    }
+
+    .home-text h2 {
+        font-size: 3rem;
+    }
+
+    .about-section h1 {
+        font-size: 3rem;
+    }
+
     .about-section > p {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 
     .about-arrow-down {
@@ -274,6 +257,14 @@ section h2 {
     .project-section .carousel {
         max-width: 80%;
         margin: 0 auto;        
+    }
+
+    .project-page-text h1 {
+        font-size: 3rem;
+    }
+
+    .project-page-text p {
+        font-size: 1.4rem;
     }
 
     section > p {
