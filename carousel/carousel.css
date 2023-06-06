@@ -80,14 +80,15 @@
     font-size: 2rem;
     text-align: center;
     text-decoration: none;
-    font-family: "GothamBold";
+    font-family: 'Montserrat', sans-serif;
 }
 
 .project-text {
     color: white;
     font-size: 1.4rem;
     text-align: center;
-    font-family: "GothamLight";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     margin: 0px 50px 0px 50px;
 }
 
